@@ -1,5 +1,6 @@
 import './App.css';
 import Accordian from './components/accordian';
+import ModalTest from './components/custom-modal-popup/modal-test';
 import TabTest from './components/custom-tabs/tab-test';
 import ImageSlider from './components/image-slider';
 import LightDarkMode from './components/light-dark-mode';
@@ -43,6 +44,9 @@ function App() {
 
       {/* Custom Tabs Component */}
       <TabTest/>
+
+      {/* Custom MOdal Popup Component */}
+      <ModalTest/>
     </div>
   );
 }
