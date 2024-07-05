@@ -9,6 +9,7 @@ import QRCodeGenerator from './components/qr-code-generator';
 import RandomColor from './components/random-color';
 import ScrollIndicator from './components/scroll-indicator';
 import StarRating from './components/star-rating';
+import TicTacToe from './components/tic-tac-toe';
 import TreeView from './components/tree-view';
 import menus from './components/tree-view/data';
 
@@ -47,6 +48,9 @@ function App() {
 
       {/* Custom MOdal Popup Component */}
       <ModalTest/>
+
+      {/* Tic Tac Toe Component */}
+      <TicTacToe/>
     </div>
   );
 }
