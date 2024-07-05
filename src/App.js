@@ -2,6 +2,8 @@ import './App.css';
 import Accordian from './components/accordian';
 import ModalTest from './components/custom-modal-popup/modal-test';
 import TabTest from './components/custom-tabs/tab-test';
+import FeatureFlags from './components/feature-flag';
+import FeatureFlagsGlobalState from './components/feature-flag/context';
 import ImageSlider from './components/image-slider';
 import LightDarkMode from './components/light-dark-mode';
 import LoadMoreData from './components/load-more-data';
@@ -51,6 +53,11 @@ function App() {
 
       {/* Tic Tac Toe Component */}
       <TicTacToe/>
+
+      {/* Feature Flag Component */}
+      <FeatureFlagsGlobalState>
+        <FeatureFlags/>
+      </FeatureFlagsGlobalState>
     </div>
   );
 }
