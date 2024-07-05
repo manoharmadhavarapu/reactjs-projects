@@ -15,6 +15,7 @@ import TicTacToe from './components/tic-tac-toe';
 import TreeView from './components/tree-view';
 import menus from './components/tree-view/data';
 import UseOutsideClickHookTest from './components/use-outside-click/test';
+import UseWindowResizeCustomHook from './components/use-window-resize/test';
 
 function App() {
   return (
@@ -62,6 +63,9 @@ function App() {
 
       {/* useOutSideClick custom hook */}
       <UseOutsideClickHookTest/>
+
+      {/* use-window-resize custom hook */}
+      <UseWindowResizeCustomHook/>
     </div>
   );
 }
