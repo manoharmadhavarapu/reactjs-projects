@@ -10,6 +10,7 @@ import LoadMoreData from './components/load-more-data';
 import QRCodeGenerator from './components/qr-code-generator';
 import RandomColor from './components/random-color';
 import ScrollIndicator from './components/scroll-indicator';
+import ScrollToTopAndBottom from './components/scroll-to/scroll-to-top-and-bottom';
 import StarRating from './components/star-rating';
 import TicTacToe from './components/tic-tac-toe';
 import TreeView from './components/tree-view';
@@ -66,6 +67,9 @@ function App() {
 
       {/* use-window-resize custom hook */}
       <UseWindowResizeCustomHook/>
+
+      {/* scroll-to-top-and-bottom */}
+      <ScrollToTopAndBottom/>
     </div>
   );
 }
