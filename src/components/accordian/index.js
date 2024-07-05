@@ -38,13 +38,13 @@ function Accordian() {
                             <div key={dataItem.id} className='item'>
                                 <div onClick={() =>enableMultipleSelection ? handleMultiSelection(dataItem.id) : handleSingleSelection(dataItem.id)} className='title'>
                                     <h3>{dataItem.question}</h3>
-                                    <span>{selected === dataItem.id ? "-" : "+"}</span>
+                                    <span>{(!enableMultipleSelection ? selected === dataItem.id : multiSelection.indexOf(dataItem.id) !== -1) ? "-" : "+"}</span>
                                 </div>
                                 {
                                     enableMultipleSelection ? 
-                                    multiSelection.indexOf(dataItem.id) !== -1 && <div className='content'> {dataItem.answer} </div>
+                                    multiSelection.indexOf(dataItem.id) !== -1 && <div className='accordian-content'> {dataItem.answer} </div>
                                     :
-                                    selected === dataItem.id && <div className='content'> {dataItem.answer} </div>
+                                    selected === dataItem.id && <div className='accordian-content'> {dataItem.answer} </div>
                                 }
                                 {/* {
                                     selected === dataItem.id ? (<div className='content'>
