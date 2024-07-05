@@ -14,6 +14,7 @@ import StarRating from './components/star-rating';
 import TicTacToe from './components/tic-tac-toe';
 import TreeView from './components/tree-view';
 import menus from './components/tree-view/data';
+import UseOutsideClickHookTest from './components/use-outside-click/test';
 
 function App() {
   return (
@@ -58,6 +59,9 @@ function App() {
       <FeatureFlagsGlobalState>
         <FeatureFlags/>
       </FeatureFlagsGlobalState>
+
+      {/* useOutSideClick custom hook */}
+      <UseOutsideClickHookTest/>
     </div>
   );
 }
